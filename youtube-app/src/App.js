@@ -1,17 +1,18 @@
-import './App.scss';
+import React from 'react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import VideoCard from './components/VideoCard';
-import Navbar from './components/Navbar';
+import VideoList from './components/VideoCard';
+import './styles/App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <Navbar />
-      <div className="main-content">
-        <Sidebar />
-        <VideoCard />
+      <div className="contents">
+       <Sidebar />
+        <div className="main-content">
+         <VideoList />
+        </div>
       </div>
     </div>
   );

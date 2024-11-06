@@ -1,0 +1,32 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  .fa-bars {
+    cursor: pointer;
+  }
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+  padding: 18px 14px 18px 16px;
+}
+
+.header__search {
+  flex: 1;
+  align-items: center;
+  padding: 8px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.header__icons {
+  display: flex;
+  gap: 15px;
+}

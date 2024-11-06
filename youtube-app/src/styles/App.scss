@@ -1,0 +1,20 @@
+@import 'normalize.css';
+@import './Header.scss';
+@import './Sidebar.scss';
+@import './VideoCard.scss';
+
+//.app {
+  //display: flex;
+ // flex-direction: column;
+//}
+.main-content {
+  display: flex;
+  flex: 1;
+  width: 100vw;
+  height: calc(100vh - 120px)
+}
+.contents {
+  display: flex;
+  flex: 1;
+  background-color: #f1f1f1;
+}

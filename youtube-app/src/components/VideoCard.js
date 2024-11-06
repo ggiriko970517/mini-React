@@ -1,17 +1,13 @@
 import React from 'react';
-import './style/VideoCard.scss';
 
-function VideoCard({ thumbnail, title, channel, views }) {
+function VideoCard ({thumbnail, title}) {
   return (
     <div className="video-card">
-      <img src={thumbnail} alt={title} />
-      <div className="info">
-        <h4>{title}</h4>
-        <p>{channel} • {views} views</p>
-      </div>
+      <img src={thumbnail} alt={title} className="video-card__thumbnail" />
+      <h3 className="video-card__title">{title}</h3>
     </div>
   );
-}
+};
 
 export default VideoCard;
 
