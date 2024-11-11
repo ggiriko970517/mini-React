@@ -1,17 +1,44 @@
 import React from 'react';
+import '../styles/Header.scss';
 
-function Header() {
+function Header({ toggleSidebar }) {
   return (
     <header className="header">
-      <i class="fa-solid fa-bars"></i>
-      <img src = "https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"  alt="YouTube Logo" className="header__logo" />
-      <input type="text" className="header__search" placeholder= "검색" />
-      <div className="header__icons">
-        <button className="header__icon"><i class="fa-solid fa-bell"></i></button>
-        <button className="header__icon"><i class="fa-solid fa-user"></i></button>
+      <div className="header-left">
+        <button className="menu-button" onClick={toggleSidebar}>
+          <i className="fas fa-bars"></i>
+        </button>
+        <img
+          src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
+          alt="YouTube Logo"
+          className="logo"
+        />
+      </div>
+
+      <div className="search-container">
+        <input type="text" placeholder="Search" className="search-bar" />
+        <button className="search-button">
+          <i className="fas fa-magnifying-glass"></i>
+        </button>
+        <button className="voice-search-button">
+          <i className="fas fa-microphone"></i>
+        </button>
+      </div>
+
+      <div className="header-right">
+        <button className="icon-button"><i className="fas fa-bell"></i></button>
+        <button className="icon-button"><i className="fas fa-tv"></i></button>
+        <button className="icon-button"><i className="fas fa-cog"></i></button>
+        <img
+          src="https://via.placeholder.com/32"
+          alt="Profile"
+          className="profile-icon"
+        />
       </div>
     </header>
   );
-};
+}
 
 export default Header;
+
+
