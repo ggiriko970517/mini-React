@@ -15,7 +15,7 @@ function App() {
     <div className="app">
       <Header toggleSidebar={toggleSidebar} />
       <div className="main-content">
-        {isSidebarOpen && <Sidebar />}
+        <Sidebar isSidebarOpen={isSidebarOpen} />
         <VideoList />
       </div>
     </div>
@@ -23,3 +23,7 @@ function App() {
 }
 
 export default App;
+
+
+
+

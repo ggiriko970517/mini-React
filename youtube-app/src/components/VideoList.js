@@ -81,6 +81,13 @@ function VideoList() {
       views: "500K",
       uploaded: "3일전",
     },
+    {
+      thumbnail: "https://via.placeholder.com/250x140",
+      title: "제목",
+      channel: "채널",
+      views: "500K",
+      uploaded: "3일전",
+    },
     
     
   ];

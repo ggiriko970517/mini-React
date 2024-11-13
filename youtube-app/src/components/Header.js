@@ -1,3 +1,4 @@
+// Header.js
 import React from 'react';
 import '../styles/Header.scss';
 
@@ -9,7 +10,7 @@ function Header({ toggleSidebar }) {
           <i className="fas fa-bars"></i>
         </button>
         <img
-          src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
+          src="/images/youtube_logo_white.png"
           alt="YouTube Logo"
           className="logo"
         />
@@ -40,5 +41,4 @@ function Header({ toggleSidebar }) {
 }
 
 export default Header;
-
 

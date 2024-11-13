@@ -1,8 +1,13 @@
+
 .video-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
-  background-color: #181818;
-  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  background-color: black;
 }
+
+
