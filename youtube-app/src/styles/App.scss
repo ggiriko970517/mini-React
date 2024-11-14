@@ -3,6 +3,11 @@
 @import './VideoCard.scss';
 @import './VideoList.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -10,14 +15,10 @@
 
 .main-content {
   display: flex;
-  flex-grow: 1;
-  margin-left: 200px;
   padding-top: 0px;
-  transition: margin-left 0.3s ease-in-out;
+  //transition: margin-left 0.3s ease-in-out;
 }
 
-.main-content.sidebar-open {
-  margin-left: 200px;
-}
+
 
 
